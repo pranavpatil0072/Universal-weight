@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.a1
+{
+    padding-left: 32%;
+    border-style: dotted;
+    border-radius: 60%;
+    border-color:rgb(119, 255, 0);
+    border-width: 0.4ch;
+}
+.a
+{
+    color: white;
+}
+.b
+{
+    color: rgb(255, 116, 2);
+    margin-left: 12%;
+}
+.c
+{
+    margin-left: 6.1%;
+
+}
+.d
+{
+    padding: 3.5px;
+    background-color:gold;
+    margin-left: 13%;
+}
+.aa
+{
+    margin-left: 10%;
+    margin-top: 0.5%;
+}
+.bb
+{
+    margin-top: 1%;
+}
+.aa1
+{
+    width: 11.4%;
+    border-radius: 100%;
+    margin-left: 11%;
+    display: inline-block;
+    padding-bottom: 2ch;
+}
+.aa2
+{
+    width: 10.80%;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 9%;
+    padding-bottom: 3ch;
+}
+.aa3
+{
+    width: 11%;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 8%;
+    padding-bottom: 3ch;
+}
+.aa4
+{
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 8%;
+    padding-bottom: 3ch;
+}
+
+
+.bb1
+{
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 7%;
+    padding-bottom: 3ch;
+}
+.bb2
+{
+    width: 11%;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 8%;
+    padding-bottom: 3ch;
+}
+.bb3
+{
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 8%;
+    padding-bottom: 3ch;
+}
+.bb4
+{
+    width: 11.5%;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 8%;
+    padding-bottom: 3ch;
+}
+.bb5
+{
+    width: 10%;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 8%;
+   margin-top: 1.8%;
+   padding-bottom: 3ch;
+}
+.z
+{
+    border-style:double;
+    border-color: rgb(255, 255, 255);
+margin-top: 1%;
+padding-bottom: 1%;
+padding-top: -350px;
+border-radius: 15%;
+}
+.aaa1
+{
+color: rgb(255, 255, 255);
+display: inline-block;
+margin-left: -10%;
+}
+.aaa2
+{
+color: white;
+display: inline-block;
+margin-left: -10%;
+}
+.aaa3
+{
+color: white;
+display: inline-block;
+margin-left: -10%;
+}
+.aaa4
+{
+color: white;
+display: inline-block;
+margin-left: -10%;
+}
+.bbb1
+{
+color: white;
+display: inline-block;
+margin-left: -9%;
+}
+.bbb2
+{
+color: white;
+display: inline-block;
+margin-left: -9%;
+}
+.bbb3
+{
+color: white;
+display: inline-block;
+margin-left: -9%;
+}
+.bbb4
+{
+color: white;
+display: inline-block;
+margin-left: -9%;
+}
+.bbb5
+{
+color: white;
+display: inline-block;
+margin-left: -9%;
+}
+#moon,#mars,#venus,#uranus,#neptune,#pluto,#jupiter,#saturn,#mercury
+{
+    color: rgb(55, 255, 0);
+}
+    </style>
+</head>
+<body background="C:\Users\Paritosh\Downloads\Galaxy.jpg">
+
+    <div class="a1"> <br>
+        <h1 class="a"> Find Your Weight On different Planets.</h1>
+        <h2 class="b">Please Enter Your Weight:<br>
+        <input class="c" type ="number" id="weight"><br>
+
+        <button class="d" onclick="moon1()">Submit </button> 
+        <script>
+
+                function moon1()
+                {
+                    var kg = document.getElementById("weight").value;
+                    var mn= Math.trunc((kg/1)*0.16);
+                    document.getElementById("moon").innerHTML = mn;     
+
+                    var kg = document.getElementById("weight").value;
+                    var mn=Math.trunc((kg/1)*0.37);
+                    document.getElementById("mars").innerHTML = mn;
+                    
+                    var kg = document.getElementById("weight").value;
+                    var mn=Math.trunc((kg/1)*0.904);
+                    document.getElementById("venus").innerHTML = mn;    
+                    
+                    var kg = document.getElementById("weight").value;
+                    var mn=Math.trunc((kg/1)*0.886);
+                    document.getElementById("uranus").innerHTML = mn;     
+
+                    var kg = document.getElementById("weight").value;
+                    var mn=Math.trunc((kg/1)*1.136);
+                    document.getElementById("neptune").innerHTML = mn;     
+
+                    var kg = document.getElementById("weight").value;
+                    var mn=Math.trunc((kg/1)*0.06);
+                    document.getElementById("pluto").innerHTML = mn;     
+                    
+                    var kg = document.getElementById("weight").value;
+                    var mn=Math.trunc((kg/1)*2.527);
+                    document.getElementById("jupiter").innerHTML = mn;     
+
+                    var kg = document.getElementById("weight").value;
+                    var mn=Math.trunc((kg/1)*1.06);
+                    document.getElementById("saturn").innerHTML = mn;     
+
+                    var kg = document.getElementById("weight").value;
+                    var mn=Math.trunc((kg/1)*0.377);
+                    document.getElementById("mercury").innerHTML = mn;    
+                }
+        </script>
+        </div>
+<div class="z">
+    <div class="aa">
+            <img class="aa1" src="C:\Users\Paritosh\Downloads\Moon.jpeg">
+            <div class="aaa1">
+            <h3>Your weight:
+          <span id="moon"></span>
+          </h3>
+            </div>
+
+        <img class="aa2" src="C:\Users\Paritosh\Downloads\Mars1.jpeg">
+        <div class="aaa2"> 
+            <h3> Your weight:
+            <span id="mars"></span> </h3>
+            </div>
+
+        <img  class="aa3" src="C:\Users\Paritosh\Downloads\Venus.jpeg">
+
+        <div class="aaa3"> 
+            <h3> Your weight: 
+                <span id="venus"></span> 
+            </h3>
+            </div>
+
+        <img class="aa4" src="C:\Users\Paritosh\Downloads\Uranus.jpeg">
+
+        <div class="aaa4"> 
+            <h3> Your weight:
+                <span id="uranus"></span>  </h3>
+            </div>
+        </div>
+
+        <div class="bb">
+        <img class="bb1" src="C:\Users\Paritosh\Downloads\Neptune.jpeg">
+        <div class="bbb1"> 
+            <h3> Your weight:
+                <span id="neptune"></span>  </h3>
+            </div>
+
+        <img class="bb2" src="C:\Users\Paritosh\Downloads\Pluto.jpeg">
+        <div class="bbb2"> 
+            <h3> Your weight:
+                <span id="pluto"></span>  </h3>
+            </div>
+
+        <img class="bb3" src="C:\Users\Paritosh\Downloads\Jupiter.jpeg">
+        <div class="bbb3"> 
+            <h3> Your weight: 
+                <span id="jupiter"></span> 
+            </h3>
+            </div>
+
+        <img class="bb4" src= "C:\Users\Paritosh\Downloads\Saturn.jpeg">
+        <div class="bbb4"> 
+            <h3> Your weight: 
+                <span id="saturn"></span> 
+            </h3>
+            </div>
+
+        <img class="bb5" src="C:\Users\Paritosh\Downloads\Mercury.jpeg">
+        <div class="bbb5"> 
+            <h3> Your weight:
+                <span id="mercury"></span>  </h3>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
